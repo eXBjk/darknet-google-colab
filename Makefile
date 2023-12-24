@@ -17,9 +17,9 @@ ZED_CAMERA_v2_8=0
 USE_CPP=0
 DEBUG=0
 
-ARCH= -gencode arch=compute_50,code=[sm_50,compute_50] \
-      -gencode arch=compute_52,code=[sm_52,compute_52] \
-	    -gencode arch=compute_61,code=[sm_61,compute_61]
+#ARCH= -gencode arch=compute_50,code=[sm_50,compute_50] \
+#      -gencode arch=compute_52,code=[sm_52,compute_52] \
+#	    -gencode arch=compute_61,code=[sm_61,compute_61]
 
 OS := $(shell uname)
 
@@ -42,7 +42,7 @@ OS := $(shell uname)
 # ARCH= -gencode arch=compute_60,code=sm_60
 
 # PASCAL, GTX 10x0, GTX 10x0 Ti, Titan Xp, Tesla P40, Tesla P4
-# ARCH= -gencode arch=compute_61,code=[sm_61,compute_61]
+ARCH= -gencode arch=compute_61,code=[sm_61,compute_61]
 
 # For Jetson TX2, Jetson Nano TX2 or Drive-PX2 uncomment:
 # ARCH= -gencode arch=compute_62,code=[sm_62,compute_62]
